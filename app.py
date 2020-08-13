@@ -15,7 +15,7 @@ def sendSMS():
     # Your Account Sid and Auth Token from twilio.com/console
     # DANGER! This is insecure. See http://twil.io/secure
     account_sid = 'AC90b1be1f3eff412545349379f0d9b9a3'
-    auth_token = '2e45caba0baa070b6c05d673f7274c59'
+    auth_token = 'fa031bed1bf473fd88e38809dc96c9cc'
     client = Client(account_sid, auth_token)
     
     message = client.messages \
