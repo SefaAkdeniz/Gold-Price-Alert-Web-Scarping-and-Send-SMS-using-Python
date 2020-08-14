@@ -1,2 +1,2 @@
-# Gold-Price-Alert-Web-Scarping-and-Send-SMS-using-Python
+# Gold Price Alert Web Scarping and Send SMS using Python
  
