@@ -33,7 +33,7 @@ while True:
     gold_price=soup.find_all('span', class_="value")[1]
     gold_price=str(gold_price)
     gold_price=float(gold_price.split(">")[1].split("<")[0].replace(",", "."))
-    if gold_price<450:
+    if gold_price<470:
         sendSMS()
     
     time.sleep(600)
