@@ -10,6 +10,9 @@ from twilio.rest import Client
 import requests
 import time
 
+RECEIVER_PHONE_NUMBER = '+905397722431'
+SENDER_PHONE_NUMBER = '+12565791581'
+GOLD_PRICE_LIMIT = 460
 
 def sendSMS():
     # Your Account Sid and Auth Token from twilio.com/console
@@ -21,8 +24,8 @@ def sendSMS():
     message = client.messages \
         .create(
               body=gold_price,
-              from_='+12565791581',
-              to='+905397722431'
+              from_=SENDER_PHONE_NUMBER,
+              to= RECEIVER_PHONE_NUMBER
           )
     
     print(message.sid)
@@ -33,7 +36,7 @@ while True:
     gold_price=soup.find_all('span', class_="value")[1]
     gold_price=str(gold_price)
     gold_price=float(gold_price.split(">")[1].split("<")[0].replace(",", "."))
-    if gold_price<470:
+    if gold_price<GOLD_PRICE_LIMIT:
         sendSMS()
     
     time.sleep(600)
