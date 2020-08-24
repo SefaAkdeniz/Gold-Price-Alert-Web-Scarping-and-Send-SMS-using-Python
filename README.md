@@ -1,8 +1,12 @@
 # Gold Price Alert Web Scarping and Send SMS using Python
- <b>Used Technology:</b>
+<b>Used Programming Language :Python</b><br>
+<b>Used Libraries:</b>
 <ol>
-<li>Python</li>
+ <li>Beautiful Soup</li>
+ </ol>
+<b>Used Technology:</b>
+<ol>
 <li>Twilio</li>
-<li>Beautiful Soup</li>
- <li>Heroku</li>
+
+<li>Heroku</li>
 </ol>
